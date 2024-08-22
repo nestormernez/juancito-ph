@@ -11,6 +11,14 @@ body{
     font-family: "Poppins", sans-serif;
 }
 
+/* .contenedor_principal{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    display: grid;
+} */
+
 
 /*! --- HEADER --- */
 
@@ -48,6 +56,7 @@ header nav ul li{
 header nav ul li a{
     text-decoration: none;
     color: black;
+    padding: 5px;
 }
 
 header nav ul li a:hover{
@@ -134,7 +143,7 @@ header div a img{
 /* Sobre Mí*/
 
 .sobremi{
-    height: 504.77px;
+    /* height: 504.77px; */
     display: flex;
     justify-content:center;
     flex-wrap: wrap;
@@ -166,51 +175,43 @@ header div a img{
     height: 100%;
     padding: 30px;
 }
+
 /* Galería */
 .galeria{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    width: 100%;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 500px;
+    gap: 20px;
     background-color: #e7e7e7;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.subtitulo{
-    display: flex;
-    justify-content: center;
+.galeria .galeria_imagen_1{
+    grid-column: span 2;
+}
+
+.galeria .galeria_imagen_3{
+    grid-row: span 2;
+}
+
+/* .subtitulo{
     margin-top: 100px;
-    margin: 100px 0px 50px 0px;
-}
+    text-align: center;
+    text-transform: uppercase;
+    grid-area:titulo;
+} */
 
-.galeria .galeria_fila1{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    position: relative;
-}
-
-.galeria .galeria_fila2{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
-    position: relative;
-}
-
-.galeria .galeria_fila1 div{
+/* .galeria div{
     width: 379.98px;
     height: 500px;
-    margin: 10px;
-}
-
-.galeria .galeria_fila2 div{
-    width: 379.98px;
-    height: 500px;
-    margin: 10px;
-}
+} */
 
 .galeria div img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 /* Promoción */
@@ -247,8 +248,22 @@ header div a img{
     display: flex;
     justify-content:space-around;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
+
+.servicios .servicios_contenedor{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.servicios .servicios_contenedor div{
+    width: 500px;
+    margin: 50px;
+}
 
 
 /* Botón Whatsapp */
@@ -261,9 +276,19 @@ header div a img{
 
 .boton-whatsapp img{
     width: 60px;
+    height: 60px;
 }
 
 /*! --- FOOTER --- */
+
+footer{
+    background-color: #e7e7e7;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
 footer nav ul{
     list-style: none;
 }
@@ -271,6 +296,11 @@ footer nav ul{
 footer nav ul li a{
     text-decoration: none;
     color: black;
+}
+
+footer nav ul li a:hover{
+    background-color: black;
+    color: white;    
 }
 
 footer div a img{
@@ -284,5 +314,89 @@ footer nav ul li{
 
 footer div {
     text-align: center;
+}
+
+/*! --- MEDIAS QUERIES --- */
+
+@media screen and (max-width:930px) {
+    header{
+        flex-direction: column;
+        height: auto;
+    }
+
+    header h1{
+        font-size: 20px;
+    }
+
+    header div{
+        margin-top: 5px;
+    }
+    .boton-whatsapp img{
+        width: 48px;
+        height: 48px;
+    }
+}
+
+@media screen and (max-width: 824px) {
+    .galeria{
+        width: 100%;
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 300px;
+        gap: 20px;
+        background-color: #e7e7e7;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .galeria .contenedor{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .galeria .galeria_imagen_1{
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+
+    .galeria .galeria_imagen_6{
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+}
+
+@media screen and (max-width:572px){
+    header{
+        position: static;
+    }
+
+    header nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    header div{
+        margin: 5px 0px 0px 0px;
+    }
+
+    .galeria{
+        width: 100%;
+        display:grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 200px;
+        gap: 10px;
+        background-color: #e7e7e7;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .galeria .contenedor{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .boton-whatsapp img{
+        width: 42px;
+        height: 42px;
+    }
 }
 
