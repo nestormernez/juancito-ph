@@ -11,7 +11,7 @@ body{
     font-family: "Poppins", sans-serif;
 }
 
-/* .contenedor_principal{
+/* .contenedorPrincipal{
     width: 80%;
     margin: 0 auto;
     padding: 0;
@@ -142,14 +142,14 @@ header div a img{
 
 /* Sobre Mí*/
 
-.sobremi{
+.sobreMi{
     /* height: 504.77px; */
     display: flex;
     justify-content:center;
     flex-wrap: wrap;
 }
 
-.sobremi div{
+.sobreMi div{
     width: 400px;
     height: 600px;
     /* border: 2px solid black; */
@@ -162,15 +162,15 @@ header div a img{
     bottom: 70px;
 }
 
-.sobremi h2{
+.sobreMi h2{
     padding: 30px;
 }
 
-.sobremi p{
+.sobreMi p{
     padding: 0 30px 30px 30px;
 }
 
-.sobremi div img{
+.sobreMi div img{
     width: 100%;
     height: 100%;
     padding: 30px;
@@ -188,11 +188,11 @@ header div a img{
     margin-bottom: 20px;
 }
 
-.galeria .galeria_imagen_1{
+.galeria .galeriaImagen1{
     grid-column: span 2;
 }
 
-.galeria .galeria_imagen_3{
+.galeria .galeriaImagen3{
     grid-row: span 2;
 }
 
@@ -252,7 +252,7 @@ header div a img{
 }
 
 
-.servicios .servicios_contenedor{
+.servicios .serviciosContenedor{
     display: flex;
     justify-content:space-around;
     align-items: center;
@@ -260,7 +260,7 @@ header div a img{
     flex-wrap: wrap;
 }
 
-.servicios .servicios_contenedor div{
+.servicios .serviciosContenedor div{
     width: 500px;
     margin: 50px;
 }
@@ -268,13 +268,13 @@ header div a img{
 
 /* Botón Whatsapp */
 
-.boton-whatsapp{
+.botonWhatsapp{
     position: fixed;
     right: 50px;
     bottom: 50px;
 }
 
-.boton-whatsapp img{
+.botonWhatsapp img{
     width: 60px;
     height: 60px;
 }
@@ -354,12 +354,12 @@ footer div {
         grid-row: span 1;
     }
 
-    .galeria .galeria_imagen_1{
+    .galeria .galeriaImagen1{
         grid-column: span 2;
         grid-row: span 1;
     }
 
-    .galeria .galeria_imagen_6{
+    .galeria .galeriaImagen6{
         grid-column: span 2;
         grid-row: span 1;
     }
@@ -394,7 +394,7 @@ footer div {
         grid-row: span 1;
     }
 
-    .boton-whatsapp img{
+    .botonWhatsapp img{
         width: 42px;
         height: 42px;
     }
