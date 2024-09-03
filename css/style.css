@@ -366,8 +366,8 @@ footer i {
     text-align: center;
     background-image: url(../img/banner_acerca_de.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size:cover;
+    background-position: left center;
     background-attachment: fixed;
 }
 
@@ -393,6 +393,10 @@ footer i {
     justify-content: space-around;
     align-items: center;
 }
+
+/*? --- GALERÍA --- */
+
+
 
 /*? --- CONTACTO --- */
 .container {
