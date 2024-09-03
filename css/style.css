@@ -125,6 +125,7 @@ header div a img {
     background-color: black;
     padding: 10px;
     opacity: 70%;
+    text-align: center;
 }
 
 .hero h2 {
@@ -352,6 +353,45 @@ footer div {
 
 footer i {
     font-size: 32px;
+}
+
+/*? --- ACERCA DE --- */
+.acercaDeBanner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 670px;
+    text-align: center;
+    background-image: url(../img/banner_acerca_de.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.acercaDeBanner div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+}
+
+.acercaDeHistoria {
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.acercaDeHistoria div{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 /*? --- CONTACTO --- */
