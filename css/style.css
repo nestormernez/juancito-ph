@@ -9,9 +9,7 @@
 }
 
 body {
-    /* font-family: "Poppins", sans-serif; */
-    /* font-family: "Dancing Script", cursive; */
-    font-family: "Lato", sans-serif;
+    font-family: "Lato", sans-serif !important;
 }
 
 /* --- CLASES GENERALES --- */
@@ -58,8 +56,9 @@ footer div a img {
 }
 
 footer nav ul li {
-    margin-left: 20px;
+    margin: 15px;
 }
+
 
 footer div {
     text-align: center;
