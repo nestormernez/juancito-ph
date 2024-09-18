@@ -50,6 +50,7 @@ footer nav ul li a:hover {
     transition-duration: 1s;
 }
 
+
 footer div a img {
     width: 32px;
     height: 32px; 
@@ -373,6 +374,9 @@ header nav ul li a:hover{
 
 /*? --- SERVICIOS --- */
 
+.serviciosContenedor div img {
+    margin-bottom: 10px;
+}
 
 /*? --- CONTACTO --- */
 
