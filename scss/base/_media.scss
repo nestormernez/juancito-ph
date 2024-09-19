@@ -1,0 +1,107 @@
+/*! --- MEDIAS QUERIES --- */
+
+@media screen and (max-width:1320px) {
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .titulos {
+        font-size: 20px;
+    }
+
+    header div {
+        margin-top: 5px;
+    }
+
+    .boton-whatsapp img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .sobreMi {
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 824px) {
+    .hero div{
+        width: 320px;
+        height: 180px;
+    }
+    
+    .hero p {
+        margin-bottom: 20px;
+    }
+
+    .boton {
+        margin-top: 0px;
+        margin-bottom: 40px;
+    }
+
+    .galeriaGrid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 300px;
+        gap: 20px;
+        background-color: #e7e7e7;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .galeriaGrid .contenedor {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .galeriaGrid .galeriaImagen1 {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+
+    .galeriaGrid .galeriaImagen6 {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+}
+
+@media screen and (max-width:610px) {
+    header {
+        position: static;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header div {
+        margin: 5px 0px 0px 0px;
+    }
+
+    .galeria {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 200px;
+        gap: 10px;
+        background-color: #e7e7e7;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .galeria .contenedor {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .botonWhatsapp img {
+        width: 42px;
+        height: 42px;
+    }
+
+    footer iframe {
+        display: none;
+    }
+}

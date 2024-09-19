@@ -1,53 +1,8 @@
-/* --- HEADER --- */
-header {
-    height: 134px;
-    background-color: white;
-    padding: 20px;
-    position: sticky;
-    top: 0px;
-    z-index: 1;
-}
+@import "./base/funcionalidades";
+@import "./base/generales";
+@import "./components/header";
+@import "./components/main";
+@import "./components/footer";
+@import "./base/media";
 
-/* --- FOOTER --- */
-
-footer {
-    background-color: #e7e7e7;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
-
-    nav {
-        ul {
-            list-style: none;
-
-            li {
-                margin: 15px;
-
-                a {
-                    text-decoration: none;
-                    color: black;
-
-                    &:hover {
-                        background-color: black;
-                        color: white;
-                        transition-duration: 1s;
-                    }
-                }
-            }
-        }
-    }
-
-    div {
-        text-align: center;
-        div {
-                a {
-                    img {
-                        width: 32px;
-                        height: 32px;
-                    }
-                }
-        }
-    }
-}
 

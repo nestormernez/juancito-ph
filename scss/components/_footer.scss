@@ -1,0 +1,42 @@
+/* --- FOOTER --- */
+
+footer {
+    background-color: #e7e7e7;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+
+    nav {
+        ul {
+            list-style: none;
+
+            li {
+                margin: 15px;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+
+                    &:hover {
+                        background-color: black;
+                        color: white;
+                        transition-duration: 1s;
+                    }
+                }
+            }
+        }
+    }
+
+    div {
+        text-align: center;
+        div {
+                a {
+                    img {
+                        width: 32px;
+                        height: 32px;
+                    }
+                }
+        }
+    }
+}

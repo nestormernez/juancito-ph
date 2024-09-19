@@ -123,6 +123,17 @@ footer div {
     height: 60px;
 }
 
+.titulos {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    opacity: 70%;
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    font-weight: 100;
+    font-style: normal;
+}
+
 .subtitulos {
     text-align: center;
     font-family: "Dancing Script", sans-serif;
@@ -184,18 +195,6 @@ header nav ul li a:hover{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-
-.titulos {
-    color: white;
-    background-color: black;
-    padding: 10px;
-    opacity: 70%;
-    text-align: center;
-    font-family: "Dancing Script", cursive;
-    font-weight: 100;
-    font-style: normal;
 }
 
 .hero h2 {
