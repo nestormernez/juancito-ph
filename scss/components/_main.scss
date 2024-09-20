@@ -166,12 +166,25 @@
 
 /*? --- SERVICIOS --- */
 
-.serviciosContenedor {
-    div {
-        img {
-            margin-bottom: 10px;
-        }
-    } 
+.servicios {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+    .serviciosContenedor {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+        div {
+            width: 500px;
+            margin: 50px;
+            img {
+                margin-bottom: 10px;
+            }
+        } 
+    }
 }
 
 /*? --- CONTACTO --- */

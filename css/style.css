@@ -305,29 +305,6 @@ header nav ul li a:hover{
     flex-direction: column;
 }
 
-/* Servicios */
-
-.servicios {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-
-.servicios .serviciosContenedor {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    flex-wrap: wrap;
-}
-
-.servicios .serviciosContenedor div {
-    width: 500px;
-    margin: 50px;
-}
-
 /*? --- ACERCA DE --- */
 
 .acercaDeBanner {
@@ -372,6 +349,26 @@ header nav ul li a:hover{
 
 
 /*? --- SERVICIOS --- */
+
+.servicios {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.servicios .serviciosContenedor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.servicios .serviciosContenedor div {
+    width: 500px;
+    margin: 50px;
+}
 
 .serviciosContenedor div img {
     margin-bottom: 10px;

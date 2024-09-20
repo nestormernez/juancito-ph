@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/* VARIABLES */
+/* LISTAS */
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 /* --- Reset --- */
@@ -225,8 +227,22 @@ header {
 
 /*? --- GALERÍA --- */
 /*? --- SERVICIOS --- */
-.serviciosContenedor div img {
-  margin-bottom: 10px; }
+.servicios {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap; }
+  .servicios .serviciosContenedor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap; }
+    .servicios .serviciosContenedor div {
+      width: 500px;
+      margin: 50px; }
+      .servicios .serviciosContenedor div img {
+        margin-bottom: 10px; }
 
 /*? --- CONTACTO --- */
 .container {
