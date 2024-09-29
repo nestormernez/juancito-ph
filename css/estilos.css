@@ -313,16 +313,22 @@ footer {
       width: 32px;
       height: 32px; }
 
-/*! --- MEDIAS QUERIES --- */
-@media screen and (max-width: 1320px) {
+/* --- MEDIAS QUERIES --- */
+@media screen and (max-width: 991px) {
+  /* Index */
   header {
     flex-direction: column;
     height: auto; }
-  .titulos {
-    font-size: 20px; }
+  .subtitulos {
+    font-size: 50px; }
+  .hero div {
+    width: 600px;
+    height: 300px; }
+    .hero div p {
+      font-size: 18px; }
   header div {
     margin-top: 5px; }
-  .boton-whatsapp img {
+  .botonWhatsapp img {
     width: 48px;
     height: 48px; }
   .sobreMi {
@@ -332,8 +338,8 @@ footer {
   .hero div {
     width: 320px;
     height: 180px; }
-  .hero p {
-    margin-bottom: 20px; }
+    .hero div p {
+      margin-bottom: 20px; }
   .boton {
     margin-top: 0px;
     margin-bottom: 40px; }
@@ -346,15 +352,15 @@ footer {
     background-color: #e7e7e7;
     margin-top: 20px;
     margin-bottom: 20px; }
-  .galeriaGrid .contenedor {
-    grid-column: span 1;
-    grid-row: span 1; }
-  .galeriaGrid .galeriaImagen1 {
-    grid-column: span 2;
-    grid-row: span 1; }
-  .galeriaGrid .galeriaImagen6 {
-    grid-column: span 2;
-    grid-row: span 1; } }
+    .galeriaGrid .contenedor {
+      grid-column: span 1;
+      grid-row: span 1; }
+    .galeriaGrid .galeriaImagen1 {
+      grid-column: span 2;
+      grid-row: span 1; }
+    .galeriaGrid .galeriaImagen6 {
+      grid-column: span 3;
+      grid-row: span 1; } }
 
 @media screen and (max-width: 610px) {
   header {
