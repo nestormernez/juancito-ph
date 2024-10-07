@@ -314,8 +314,8 @@ footer {
       height: 32px; }
 
 /* --- MEDIA QUERIES --- */
-@media screen and (max-width: 991px) {
-  /* Index */
+/* Index */
+@media screen and (max-width: 990px) {
   header {
     flex-direction: column;
     height: auto; }
