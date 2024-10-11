@@ -1,60 +1,49 @@
 /* --- MEDIA QUERIES --- */
 
 
-    /* Index */
+/* Index */
 
-    // Punto de quiebre
+//Punto de quiebre para ordenar la sección sobre mí
+@media screen and (max-width:1319px) {
+    .sobreMi {
+        height: 100%;
+
+        .container2 {
+            order: 0;
+        }
+
+        .container1 {
+            order: 1;
+        }
+
+        .container3 {
+            order: 3;
+        }
+    }
+}
+
+// Punto de quiebre para tablets
 @media screen and (max-width:990px) {
-    
     header {
         flex-direction: column;
         height: auto;
-    }
 
-    // .titulos {
-    //     font-size: 20px;
-    // }
+        div {
+            margin-top: 5px;
+        }
+    }
 
     .subtitulos {
         font-size: 50px;
     }
 
     .hero {
-        div{
+        div {
             width: 600px;
             height: 300px;
+
             p {
                 font-size: 18px;
-            }
-        }
-    }
-
-    header {
-        div {
-            margin-top: 5px;
-        }
-    }
-
-    .botonWhatsapp {
-        img {
-        width: 48px;
-        height: 48px;
-        }
-    }
-
-    .sobreMi {
-        height: 100%;
-    }
-}
-
-//Punto de quiebre
-@media screen and (max-width: 824px) {
-    .hero {
-        div{
-            width: 320px;
-            height: 180px;
-            p {
-                margin-bottom: 20px;
             }
         }
     }
@@ -64,27 +53,60 @@
         margin-bottom: 40px;
     }
 
-    .galeriaGrid {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 300px;
-        gap: 20px;
-        background-color: #e7e7e7;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        .contenedor {
-            grid-column: span 1;
-            grid-row: span 1;
-        }
-        .galeriaImagen1 {
-            grid-column: span 2;
-            grid-row: span 1;
-        }
+    .galeria {
+        .galeriaGrid {
+            .contenedor {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
 
-        .galeriaImagen6 {
-            grid-column: span 3;
-            grid-row: span 1;
+            .galeriaImagen1 {
+                grid-column: span 2;
+                grid-row: span 1;
+            }
+
+            .galeriaImagen6 {
+                grid-column: span 3;
+                grid-row: span 1;
+            }
+        }
+    }
+
+    .botonWhatsapp {
+        img {
+            width: 48px;
+            height: 48px;
+        }
+    }
+}
+
+//Punto de quiebre para mostrar la grid de a 2 columnas
+@media screen and (max-width: 850px) {
+    .galeria {
+        .galeriaGrid {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: 300px;
+            gap: 20px;
+            background-color: #e7e7e7;
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+            .contenedor {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+
+            .galeriaImagen1 {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+
+            .galeriaImagen6 {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
         }
     }
 }
